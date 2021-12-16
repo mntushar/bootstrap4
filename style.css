@@ -1,0 +1,20 @@
+#contact_us .form-control {
+  border-radius: 0px;
+  border: 2px solid #000;
+}
+
+#contact_us_name .first_name {
+  padding-right: 0px;
+}
+
+#contact_us_name .last_name {
+  padding-left: 0px;
+}
+
+#contact_us_bt button {
+  background: rgb(18, 236, 11);
+}
+
+#contact_us_bt button:hover {
+  background: rgb(233, 7, 7);
+}
