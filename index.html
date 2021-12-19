@@ -65,14 +65,28 @@
         <main>
             <!--search form-->
             <div class="search_form my-3 text-right" id="style_search_form">
-                <form>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text" id="search_icon"><i class="fas fa-search"></i></div>
-                        </div>
+                <div class="row">
+                    <div class="col-8"></div>
+                    <div class="col-4">
+                        <form>
+                            <div class="input-group mb-2">
+                                <select class="select_style" id="exampleFormControlSelect1">
+                                    <option>All</option>
+                                    <option>Test</option>
+                                    <option>TestTest</option>
+                                    <option>TestTestTest</option>
+                                    <option>TestTestTestTest</option>
+                                </select>
+                                <input type="text" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="Search...">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" id="search_icon"><i class="fas fa-search"></i></div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+
             </div>
 
             <!--search form end-->
@@ -265,41 +279,44 @@
             <!-- service section end -->
 
             <!-- Contact us-->
-            <div id="contact_us" class="contact_us bg-primary">
+            <div id="id_contact_us" class="contact_us bg-primary">
                 <h2 class="font-weight-bold text-center text-white pt-2 mt-2">Contact Us</h2>
                 <form method="Get" onsubmit="return false">
-                    <div id="contact_us_name" class="form-group col-6 m-auto">
-                        <label class="text-white d-block">Name</label>
-                        <div class="row">
-                            <div class="col first_name">
-                                <input id="user_first_name" type="text" class="form-control" placeholder="First name">
+                    <div class="contact_us_form" id="id_contact_us_form">
+                        <div id="contact_us_name" class="form-group col-6 m-auto">
+                            <label class="text-white d-block">Name</label>
+                            <div class="row">
+                                <div class="col first_name">
+                                    <input id="user_first_name" type="text" class="form-control"
+                                        placeholder="First name">
+                                </div>
+                                <div class="col last_name">
+                                    <input id="user_last_name" type="text" class="form-control" placeholder="Last name">
+                                </div>
                             </div>
-                            <div class="col last_name">
-                                <input id="user_last_name" type="text" class="form-control" placeholder="Last name">
-                            </div>
+                        </div>
+
+                        <div class="form-group col-6 m-auto">
+                            <label for="exampleInputEmail1" class="text-white">Email address</label>
+                            <input type="email" id="user_email" class="form-control shadow-none" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted text-white">We'll never share your email
+                                with
+                                anyone else.</small>
+                        </div>
+
+                        <div class="form-group col-6 m-auto">
+                            <label for="exampleFormControlTextarea1" class="text-white">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <small id="emailHelp" class="form-text text-muted text-white">We'll never share your message
+                                with anyone else.</small>
                         </div>
                     </div>
 
-                    <div class="form-group col-6 m-auto">
-                        <label for="exampleInputEmail1" class="text-white">Email address</label>
-                        <input type="email" id="user_email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted text-white">We'll never share your email with
-                            anyone else.</small>
-                    </div>
-
-                    <div class="form-group col-6 m-auto">
-                        <label for="exampleFormControlTextarea1" class="text-white">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <small id="emailHelp" class="form-text text-muted text-white">We'll never share your message
-                            with anyone else.</small>
-                    </div>
-
-                    <div id="contact_us_bt" onclick="myData()" class="col-6 m-auto">
+                    <div id="contact_us_bt" onclick="myData()" class="col-6 m-auto contact_button">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
-
             </div>
 
             <!--contact us end-->

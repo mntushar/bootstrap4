@@ -1,39 +1,67 @@
-#contact_us .form-control {
-  border-radius: 0px;
-  border: 2px solid #000;
+/* search form style */
+
+select#exampleFormControlSelect1 {
+  border-top: 2px solid rgb(119, 119, 119);
+  border-bottom: 2px solid rgb(119, 119, 119);
+  border-right: 0px;
+  border-left: 2px solid rgb(119, 119, 119);
+  box-shadow: none;
 }
 
-#contact_us_name .first_name {
-  padding-right: 0px;
+.select_style {
+  background: white;
+  width: 60px;
+  padding-left: 10px;
 }
 
-#contact_us_name .last_name {
-  padding-left: 0px;
-}
-
-#contact_us_bt button {
-  background: rgb(18, 236, 11);
-}
-
-#contact_us_bt button:hover {
-  background: rgb(233, 7, 7);
+.select_style:focus {
+  outline: none;
 }
 
 input#inlineFormInputGroup {
-  margin-left: 720px;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid rgb(119, 119, 119);
+  border-bottom: 2px solid rgb(119, 119, 119);
+  border-right: 2px solid rgb(119, 119, 119);
   border-left: 0;
   border-radius: 0;
   box-shadow: none;
 }
 
 div#search_icon {
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid rgb(119, 119, 119);
+  border-bottom: 2px solid rgb(119, 119, 119);
+  border-right: 2px solid rgb(119, 119, 119);
   border-left: 0;
   border-radius: 0;
   padding-bottom: 4px;
 }
+
+/* search form style end */
+
+/* contact style */
+
+#user_first_name,
+#user_last_name,
+#user_email,
+#exampleFormControlTextarea1 {
+  border-radius: 0px;
+  border: 2px solid #000;
+}
+
+.first_name {
+  padding-right: 0px;
+}
+
+.last_name {
+  padding-left: 0px;
+}
+
+.contact_button button {
+  background: rgb(18, 236, 11);
+}
+
+.contact_button button:hover {
+  background: rgb(233, 7, 7);
+}
+
+/* contact us style end */
