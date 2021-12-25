@@ -1,3 +1,22 @@
+// about section
+
+var aboutImageId = document.getElementById("about_image");
+ 
+aboutImageId.addEventListener("mouseenter", function(){
+    aboutImageId.classList.add("aboutUsImageHover");
+    
+});
+
+aboutImageId.addEventListener("mouseleave", function(obj){
+    obj.target.classList.remove("aboutUsImageHover");
+
+});
+
+// about section end
+
+
+//contact us
+
 function myData() {
     let contact_us = document.getElementById("contact_us");
     let contact_us_all = contact_us.querySelectorAll("form");
@@ -66,6 +85,6 @@ function getCookie(cname) {
     return "";
   }
 
-
+// contact us end
 
 

@@ -38,6 +38,33 @@ div#search_icon {
 
 /* search form style end */
 
+/* about us */
+.aboutUsImage {
+  background-image: url("/images/tushar-final.jpg");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.aboutUsImageHover {
+  background-image: url("/images/pasport.jpg");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* about us end */
+
 /* contact style */
 
 #user_first_name,
